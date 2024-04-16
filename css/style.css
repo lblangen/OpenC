@@ -216,7 +216,13 @@ nav ul li a:hover::after {
 
 /****** Hebergements ***********/
 .hebergements {
+    display: flex;
+    flex-wrap: wrap;
     width: 65%;
+}
+
+.hebergements h2{
+    width: 100%;
 }
 
 /****** Populaires ***********/
@@ -298,6 +304,10 @@ nav ul li a:hover::after {
 
 .footer-category h2 {
     margin-bottom: 10px;
+}
+
+.footer{
+    background-color: var(--main-bg-color);
 }
 
 
