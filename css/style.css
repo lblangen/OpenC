@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --dark-grey : dimgrey;
 }
 
 .fa-solid {
@@ -215,10 +216,47 @@ nav ul li a:hover::after {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
+    background-color: var(--main-bg-color);
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
+    align-items: flex-start;
+}
+
+.hebergementscard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.hebergements .vignette{
+    width: 31.5%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 8px var(--dark-grey);
+    justify-content: space-around;
+    transition: all 0.22s;
+}
+
+.hebergements .vignette img {
+    border-radius: 16px 16px 0 0;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hebergementscard h2,
+.hebergementscard h3,
+.hebergementscard .sr-only{
+    margin: 5px;
+}
+
+.vignette:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--main-color);
+    cursor: pointer;
 }
 
 .hebergements h2{
