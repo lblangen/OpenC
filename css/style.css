@@ -206,6 +206,7 @@ nav ul li a:hover::after {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .hebergements-and-populaires section {
@@ -222,22 +223,24 @@ nav ul li a:hover::after {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-right: 25px;
+    width: 100%;
 }
 
 .hebergementscard{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 5px;
+    justify-content: space-between;
 }
 
 .hebergements .vignette{
-    width: 31.5%;
+    width: 29%;
     background-color: white;
     border-radius: 16px;
     box-shadow: 0 0 8px var(--dark-grey);
     justify-content: space-around;
     transition: all 0.22s;
+    padding: 5px;
 }
 
 .hebergements .vignette img {
@@ -250,6 +253,14 @@ nav ul li a:hover::after {
 .hebergementscard h2,
 .hebergementscard h3,
 .hebergementscard .sr-only{
+    margin: 5px;
+}
+
+.hebergements h3{
+    font-weight: normal;
+}
+
+.hebergements .card-rating{
     margin: 5px;
 }
 
@@ -266,6 +277,10 @@ nav ul li a:hover::after {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+}
+
+.populaires .card{
+    transition: all 0.22s;
 }
 
 .populaires-title {
@@ -308,6 +323,12 @@ nav ul li a:hover::after {
     margin-bottom: 5px;
 }
 
+.populaires .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--main-color);
+    cursor: pointer;
+}
+
 /****** Activités ***********/
 
 .Activites {
@@ -315,10 +336,27 @@ nav ul li a:hover::after {
     flex-direction: row;
     align-items: center;
     text-align: center;
+    margin-bottom: 60px;
 }
 
-.Activites h2 {
-    margin-bottom: 20px;
+.Activites .vignette{
+    width: 29%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 8px var(--dark-grey);
+    justify-content: space-between;
+    transition: all 0.22s;
+    margin-right: 35px;
+}
+
+.Activites .vignette:last-child{
+    margin-right: 0;
+}
+
+.Activites .vignette img{
+    height: 375px;
+    width: 400px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .vignette {
@@ -327,6 +365,11 @@ nav ul li a:hover::after {
 
 .vignette img {
     max-width: 100%;
+    object-fit: cover;
+}
+
+.Activites .vignette h2{
+    font-size: 22px;
 }
 
 /****** Footer ***********/
@@ -338,6 +381,7 @@ nav ul li a:hover::after {
 .footer-category {
     flex: 1;
     margin-right: 20px;
+    padding-left: 25px;
 }
 
 .footer-category h2 {
