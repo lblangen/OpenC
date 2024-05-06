@@ -221,6 +221,11 @@ nav ul li a:hover::after {
 
 /****** Hebergements ***********/
 
+.titlehb {
+    margin-top: -0px;
+    padding-bottom: 16px;
+}
+
 .hebergements {
     background-color: var(--main-bg-color);
     display: flex;
