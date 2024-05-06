@@ -377,7 +377,10 @@ nav ul li a:hover::after {
 }
 
 .Activites .vignette h2{
-    font-size: 22px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    padding-bottom: 6px;
 }
 
 /****** Footer ***********/
@@ -439,6 +442,13 @@ nav ul li a:hover::after {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
+
+    header{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+
     /* ... */
 }
