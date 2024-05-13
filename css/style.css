@@ -450,5 +450,32 @@ nav ul li a:hover::after {
         padding: 0;
     }
 
+    .logo {
+        padding: 20px 20px;
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    .main-container h1 {
+        width: 100%;
+        font-size: 17px;
+
+    }
+
+    .main-container p {
+        font-size: 13px;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .searchInput {
+        width: calc(100% - 150px); /* Calcul de la largeur en fonction de la largeur disponible après avoir pris en compte la largeur du bouton */
+    }
+
     /* ... */
 }
