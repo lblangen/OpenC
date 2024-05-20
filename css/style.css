@@ -473,9 +473,49 @@ nav ul li a:hover::after {
         width: 100%;
     }
 
-    .searchInput {
-        width: calc(100% - 150px); /* Calcul de la largeur en fonction de la largeur disponible après avoir pris en compte la largeur du bouton */
+    .searchButton {
+        display: none;
     }
+
+    .bouton_rechercher_mobile i {
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 16px;
+        color: white;
+        background-color: #0065FC;
+        padding: 14px;
+    }
+
+    .bouton_rechercher_mobile {
+        border: none;
+        border-radius: 16px 16px 16px 16px;
+        position: relative;
+        right: 12px;
+        background: none;
+    }
+
+    #filters {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #filters h2 {
+        width: 100%;
+    }
+
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .filter-button {
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
 
     /* ... */
 }
