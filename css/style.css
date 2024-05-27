@@ -19,12 +19,12 @@ body {
     justify-content: center;
 }
 
-.main-container {
+/* .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-}
+} */
 
 a {
     color: inherit;
@@ -166,6 +166,10 @@ nav ul li a:hover::after {
 .searchButton i{
     display: none;
 }
+
+/* .bouton_rechercher_mobile {
+    display: none;
+} */
 
 /* Filters */
 
@@ -407,6 +411,14 @@ nav ul li a:hover::after {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
+/* Desktop devices */
+@media (min-width: 768px) {
+    .bouton_rechercher_mobile {
+        display: none;
+    }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
