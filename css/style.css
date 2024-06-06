@@ -467,8 +467,11 @@ nav ul li a:hover::after {
     }
 
     nav {
-        width: 100%;
         padding: 10px 10px;
+    }
+
+    .main-container {
+        width: 100%;
     }
 
     .main-container h1 {
@@ -527,7 +530,6 @@ nav ul li a:hover::after {
         padding: 10px;
         text-align: center;
     }
-
 
     /* ... */
 }
