@@ -72,13 +72,13 @@ header {
 }
 
 nav ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
     margin-left: 20px;
 }
 
@@ -389,8 +389,11 @@ nav ul li a:hover::after {
 
 /****** Footer ***********/
 
-.footer {
+.footer-container {
     display: flex;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    padding: 20px;
 }
 
 .footer-category {
@@ -402,11 +405,6 @@ nav ul li a:hover::after {
 .footer-category h2 {
     margin-bottom: 10px;
 }
-
-.footer{
-    background-color: var(--main-bg-color);
-}
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -467,7 +465,15 @@ nav ul li a:hover::after {
     }
 
     nav {
-        padding: 10px 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    nav ul li{
+        margin: 0;
+        width: 50%;
+        text-align: center;
     }
 
     .main-container {
@@ -523,13 +529,67 @@ nav ul li a:hover::after {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 8px;
+        margin-bottom: 15px;
     }
 
     .filter-button {
-        margin-bottom: 10px;
-        padding: 10px;
         text-align: center;
+        width:  48%;
     }
 
-    /* ... */
+    #filters button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .hebergements-and-populaires{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards a{
+        width: 100%;
+    }
+
+    .hebergements-and-populaires .populaires{
+        border-radius: 0;
+    }
+
+    .hebergementscard{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements .vignette{
+        width: 100%;
+    }
+
+    .Activites{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Activites .vignette{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 28px;
+    }
+
+    .footer-category {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+        box-sizing: border-box;
+    }
 }
