@@ -460,6 +460,13 @@ nav ul li a:hover::after {
         padding: 0;
     }
 
+    .main-container h1,
+    .main-container p,
+    .main-container .searchBar,
+    #filters h2{
+        margin-left: 5%;
+    }
+
     body{
         margin: 0;
     }
@@ -496,6 +503,7 @@ nav ul li a:hover::after {
 
     .searchBar {
         width: 100%;
+        margin-left: 5px;
     }
 
     .searchButton {
