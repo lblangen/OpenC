@@ -561,6 +561,11 @@ nav ul li a:hover::after {
         width: 100%;
     }
 
+    .populaires-cards img {
+        width: 42%;
+        height: 172px;
+    }
+
     .hebergements-and-populaires .populaires{
         border-radius: 0;
     }
@@ -571,7 +576,7 @@ nav ul li a:hover::after {
     }
 
     .hebergements .vignette{
-        width: 100%;
+        width: 115%;
     }
 
     .Activites{
@@ -580,8 +585,12 @@ nav ul li a:hover::after {
     }
 
     .Activites .vignette{
-        width: 100%;
+        width: 90%;
         margin-right: 0;
+    }
+
+    .Activites .vignette img{
+        height: 150px;
     }
 
     .footer-container {
