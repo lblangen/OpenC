@@ -418,7 +418,7 @@ nav ul li a:hover::after {
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
 
     html {
         margin: 0% 3% 0% 3%;
@@ -453,6 +453,11 @@ nav ul li a:hover::after {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .Activites .vignette img{
+        height: 225px;
+        width: 400px;
     }
 }
 
