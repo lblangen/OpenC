@@ -167,22 +167,18 @@ nav ul li a:hover::after {
     display: none;
 }
 
-/* .bouton_rechercher_mobile {
-    display: none;
-} */
-
 /* Filters */
 
-#filters {
+.filters {
     display: flex;
     align-items: center;
 }
 
-#filters h2{
+.filters h2{
     padding-right: 10px;
 }
 
-#filters button{
+.filters button{
     align-items: center;
     height: 46px;
     border: 2px solid #b4b4b4;
@@ -191,14 +187,14 @@ nav ul li a:hover::after {
     border-radius: 25px;
 }
 
-#filters button:hover{
+.filters button:hover{
     cursor: pointer;
     border-color: #0065FC;
     color: #0065FC;
     background-color: #DEEBFF;
 }
 
-#filters button i {
+.filters button i {
     margin : 10px;
 }
 
@@ -343,7 +339,7 @@ nav ul li a:hover::after {
 
 /****** Activités ***********/
 
-.Activites {
+.activites {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -351,7 +347,7 @@ nav ul li a:hover::after {
     margin-bottom: 60px;
 }
 
-.Activites .vignette{
+.activites .vignette{
     width: 29%;
     background-color: white;
     border-radius: 16px;
@@ -361,11 +357,11 @@ nav ul li a:hover::after {
     margin-right: 35px;
 }
 
-.Activites .vignette:last-child{
+.activites .vignette:last-child{
     margin-right: 0;
 }
 
-.Activites .vignette img{
+.activites .vignette img{
     height: 375px;
     width: 400px;
     border-radius: 15px 15px 0px 0px;
@@ -418,10 +414,60 @@ nav ul li a:hover::after {
 }
 
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-
+@media (min-width: 768px) and (max-width: 1024px) {
     html {
         margin: 0% 3% 0% 3%;
+    }
+
+    nav ul li{
+        width: 50%;
+        text-align: center;
+        flex: 1;
+        padding: 20px 0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    nav ul li:hover {
+        color: blue;
+    }
+
+    .nav ul li:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: blue;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    .texttop1 h1 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .texttop1 p {
+        margin-bottom: 40px;
+    }
+
+    .filters {
+        display: initial;
+    }
+
+    .filters h2 {
+        display: block;
+        width: 100%;
+    }
+
+    .button-container {
+        margin-bottom: 40px;
+    }
+
+    .info-container {
+        margin-bottom: 30px;
     }
 
     .hebergements-and-populaires {
@@ -455,7 +501,7 @@ nav ul li a:hover::after {
         font-size: 13px;
     }
 
-    .Activites .vignette img{
+    .activites .vignette img{
         height: 225px;
         width: 400px;
     }
@@ -477,7 +523,7 @@ nav ul li a:hover::after {
     .main-container h1,
     .main-container p,
     .main-container .searchBar,
-    #filters h2{
+    .filters h2{
         margin-left: 5%;
     }
 
@@ -499,6 +545,26 @@ nav ul li a:hover::after {
         margin: 0;
         width: 50%;
         text-align: center;
+        flex: 1;
+        padding: 20px 0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    nav ul li:hover {
+        color: blue;
+    }
+
+    .nav ul li:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: blue;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transition: width 0.3s ease, left 0.3s ease;
     }
 
     .main-container {
@@ -542,13 +608,13 @@ nav ul li a:hover::after {
         background: none;
     }
 
-    #filters {
+    .filters {
         display: flex;
         flex-direction: column;
         align-items: stretch;
     }
 
-    #filters h2 {
+    .filters h2 {
         width: 100%;
         margin-top: 2.5%;
     }
@@ -567,7 +633,7 @@ nav ul li a:hover::after {
         width:  48%;
     }
 
-    #filters button{
+    .filters button{
         margin: 0;
         padding: 0;
     }
@@ -575,6 +641,7 @@ nav ul li a:hover::after {
     .info-container {
         display: flex;
         align-items: center;
+        margin-bottom: 15%;
     }
 
     .info-container i {
@@ -584,6 +651,10 @@ nav ul li a:hover::after {
     .hebergements-and-populaires{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .populaires {
+        width: 100%;
     }
 
     .populaires-cards{
@@ -608,6 +679,10 @@ nav ul li a:hover::after {
         background-color: white;
     }
 
+    .hebergements {
+        width: 100%;
+    }
+
     .hebergementscard{
         display: flex;
         flex-direction: column;
@@ -617,21 +692,21 @@ nav ul li a:hover::after {
         width: 115%;
     }
 
-    .TitleAct{
+    .titleAct{
         margin-left: 5%;
     }
 
-    .Activites{
+    .activites{
         display: flex;
         flex-direction: column;
     }
 
-    .Activites .vignette{
+    .activites .vignette{
         width: 90%;
         margin-right: 0;
     }
 
-    .Activites .vignette img{
+    .activites .vignette img{
         height: 150px;
     }
 

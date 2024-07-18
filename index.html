@@ -23,15 +23,17 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
         
         </header>
 
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
+            <div class="texttop1">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
     
             <form class="searchBar flex" action="#" method="GET">
                 <div class="center-icon">
@@ -42,7 +44,7 @@
                 <button type="button" class="bouton_rechercher_mobile"><i class="fa-solid fa-magnifying-glass loupe"></i></button>
               </form>
     
-            <div id="filters">
+            <div class="filters">
                 <h2>Filtres</h2>
                 <div class="button-container">
                 <button class="filter-button"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
@@ -59,7 +61,7 @@
 
         <main>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements"><a id="hebergements"></a>
                         <h2 class="titlehb">Hébergements à Marseille</h2>
                     <div class="hebergementscard">
                         
@@ -219,10 +221,10 @@
                 </section>
             </div>
 
-            <div class="TitleAct">
+            <div class="titleAct"><a id="activites"></a>
                 <h2>Activités à Marseille</h2>
             </div>
-            <div class="Activites">
+            <div class="activites">
                 <div class="vignette">
                     <img src="./images/activites/reno-laithienne.jpg" alt="Vieux-Port">
                     <h2>Vieux-Port</h2>
