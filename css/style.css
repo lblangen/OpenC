@@ -215,7 +215,6 @@ nav ul li a:hover::after {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
 }
 
@@ -520,25 +519,18 @@ nav ul li a:hover::after {
         margin-top: -9%;
     }
 
-    .main-container h1,
-    .main-container p,
-    .main-container .searchBar,
-    .filters h2{
-        margin-left: 5%;
-    }
-
     body{
         margin: 0;
     }
 
     .logo {
-        padding: 20px 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     nav {
         width: 100%;
         margin-bottom: 10px;
-        margin-top: 10px;
     }
 
     nav ul li{
@@ -573,17 +565,26 @@ nav ul li a:hover::after {
 
     .main-container h1 {
         width: 100%;
-        font-size: 17px;
+        font-size: 25px;
 
     }
 
     .main-container p {
-        font-size: 17px;
+        font-size: 18px;
+    }
+
+    .texttop1 {
+        text-align:center;
+    }
+
+    .searchBarFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .searchBar {
         width: 100%;
-        margin-left: 5px;
         margin-top: 10%;
     }
 
@@ -624,8 +625,10 @@ nav ul li a:hover::after {
         flex-wrap: wrap;
         gap: 13px;
         margin-bottom: 5%;
-        margin-left: 4%;
-        margin-right: 4%;
+    }
+
+    .filters h2{
+        padding-right: 0;
     }
 
     .filter-button {
@@ -689,7 +692,7 @@ nav ul li a:hover::after {
     }
 
     .hebergements .vignette{
-        width: 115%;
+        width: 100%;
     }
 
     .titleAct{
