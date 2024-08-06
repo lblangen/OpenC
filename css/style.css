@@ -230,6 +230,7 @@ nav ul li a:hover::after {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding: 30px;
     margin-right: 25px;
     width: 100%;
 }
@@ -461,6 +462,10 @@ nav ul li a:hover::after {
         width: 100%;
     }
 
+    .filter-button {
+        font-size: 12px;
+    }
+
     .button-container {
         margin-bottom: 40px;
     }
@@ -475,6 +480,10 @@ nav ul li a:hover::after {
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergementscard h2, .hebergements h3 {
+        font-size: 16px;
     }
 
     .populaires {
@@ -501,8 +510,12 @@ nav ul li a:hover::after {
     }
 
     .activites .vignette img{
-        height: 225px;
+        height: 100px;
         width: 400px;
+    }
+
+    .activites .vignette h2 {
+        font-size: 10px;
     }
 }
 
@@ -566,21 +579,22 @@ nav ul li a:hover::after {
     .main-container h1 {
         width: 100%;
         font-size: 25px;
-
-    }
-
-    .main-container p {
-        font-size: 18px;
     }
 
     .texttop1 {
         text-align:center;
     }
 
+    .texttop1 p {
+        padding-bottom: 22px;
+    }
+
     .searchBarFlex {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-left: 18px;
+        padding-bottom: 25px
     }
 
     .searchBar {
@@ -610,6 +624,7 @@ nav ul li a:hover::after {
     }
 
     .filters {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -621,6 +636,8 @@ nav ul li a:hover::after {
     }
 
     .button-container {
+        padding-left: 25px;
+        padding-right: 25px;
         display: flex;
         flex-wrap: wrap;
         gap: 13px;
@@ -629,6 +646,9 @@ nav ul li a:hover::after {
 
     .filters h2{
         padding-right: 0;
+        box-sizing: border-box;
+        padding-left: 25px;
+        font-size: 20px;
     }
 
     .filter-button {
@@ -641,10 +661,16 @@ nav ul li a:hover::after {
         padding: 0;
     }
 
+    .filters button i {
+        margin: 5px;
+    }
+
     .info-container {
         display: flex;
         align-items: center;
         margin-bottom: 15%;
+        padding-left: 25px;
+        font-size: 16px;
     }
 
     .info-container i {
@@ -658,11 +684,19 @@ nav ul li a:hover::after {
 
     .populaires {
         width: 100%;
+        padding-top: 7%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10%;
     }
 
     .populaires-cards{
         display: flex;
         flex-direction: column;
+    }
+
+    .populaires-cards .card{
+        margin-top: 7%;
     }
 
     .populaires-cards a{
@@ -682,17 +716,41 @@ nav ul li a:hover::after {
         background-color: white;
     }
 
+    .hebergementscard h2, .hebergementscard h3, .hebergementscard .sr-only {
+        margin: 0;
+    }
+
+    .hebergementscard h2, .hebergements h3 {
+        font-size: 16px;
+    }
+
     .hebergements {
         width: 100%;
+        padding: 0;
+    }
+
+    .titlehb {
+        padding-top: 7%;
+        padding-left: 25px;
     }
 
     .hebergementscard{
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .hebergements .vignette{
-        width: 100%;
+        width: 85%;
+    }
+
+    .hebergements .vignette img {
+        height: 100px;
+    }
+
+    .affplus {
+        font-size: 20px;
     }
 
     .titleAct{
@@ -711,6 +769,12 @@ nav ul li a:hover::after {
 
     .activites .vignette img{
         height: 150px;
+    }
+
+    .activites .vignette h2 {
+        text-align: left;
+        padding-left: 5%;
+        font-size: 16px;
     }
 
     .footer-container {
