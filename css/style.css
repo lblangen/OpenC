@@ -18,14 +18,10 @@ body {
     padding: 0% 2%;
     display: flex;
     justify-content: center;
-}
-
-/* .main-container {
     width: 100%;
+    margin: auto;
     max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
-} */
+}
 
 a {
     color: inherit;
@@ -65,11 +61,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 .logo img {
     width: 61px;
     height: 19px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 5%;
 }
 
 nav ul {
@@ -88,14 +92,9 @@ nav ul li a {
     padding-bottom: 5px;
 }
 
-nav ul li a:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: blue;
+nav ul li:hover {
+    color: blue;
+    border-top: solid 2px #0065FC;
 }
 
 .texttop1 h1 {
@@ -149,7 +148,10 @@ nav ul li a:hover::after {
     font-size: 1.1rem;
     font-weight: 600;
     width: 230px;
-    height: 50px;
+}
+
+.searchBarFlex {
+    display: flex;
 }
 
 .searchInput::placeholder{
@@ -561,20 +563,18 @@ nav ul li a:hover::after {
 
     body {
         padding: 0;
+        margin: 0;
     }
 
     header{
         flex-direction: column;
         justify-content: space-between;
         padding: 0;
+        height: 150px;
     }
 
     main {
         margin-top: -9%;
-    }
-
-    body{
-        margin: 0;
     }
 
     .logo {
@@ -583,6 +583,7 @@ nav ul li a:hover::after {
     }
 
     nav {
+        position: static;
         width: 100%;
         margin-bottom: 10px;
     }
@@ -595,22 +596,13 @@ nav ul li a:hover::after {
         padding: 20px 0;
         position: relative;
         cursor: pointer;
+        border-bottom: 2px solid #DADADA;
     }
 
     nav ul li:hover {
         color: blue;
-    }
-
-    .nav ul li:after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: blue;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transition: width 0.3s ease, left 0.3s ease;
+        border-bottom: solid 2px #0065FC;
+        border-top: none;
     }
 
     .main-container {
