@@ -534,8 +534,12 @@ nav ul li:hover {
         width: 100%;
     }
 
-    .hebergementscard h2, .hebergements h3 {
-        font-size: 16px;
+    .hebergementscard h2 {
+        font-size: 14px;
+    }
+
+    .hebergements h3 {
+        font-size: 12px;
     }
 
     .populaires {
