@@ -61,7 +61,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 70px;
 }
 
 .logo img {
@@ -98,8 +98,12 @@ nav ul li:hover {
 }
 
 .texttop1 h1 {
-    margin-top: 3%;
+    margin-top: 2%;
     font-size: 20px;
+}
+
+.texttop1 p {
+    padding-bottom: 20px;
 }
 
 /* Search bar */
@@ -152,6 +156,7 @@ nav ul li:hover {
 
 .searchBarFlex {
     display: flex;
+    padding-bottom: 20px;
 }
 
 .searchInput::placeholder{
@@ -184,12 +189,13 @@ nav ul li:hover {
 
 .filters h2{
     padding-right: 10px;
+    font-size: 16px;
 }
 
 .filters button{
     align-items: center;
     height: 46px;
-    border: 2px solid #b4b4b4;
+    border: 1.5px solid #b4b4b4;
     margin-left: 5px;
     padding-right: 20px;
     border-radius: 25px;
@@ -206,11 +212,20 @@ nav ul li:hover {
     margin : 10px;
 }
 
+.filter-button span {
+    font-size: 13px;
+}
+
 .filter-button {
     margin-right: 10px;
     font-weight: bold;
     font-size: 16px;
     background-color: white;
+}
+
+.textinfo {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -272,10 +287,6 @@ nav ul li:hover {
     margin: 5px;
 }
 
-.hebergements h3{
-    font-weight: normal;
-}
-
 .hebergements .card-rating{
     margin: 5px;
 }
@@ -288,6 +299,12 @@ nav ul li:hover {
 
 .hebergements h2{
     width: 100%;
+    font-size: 16px;
+}
+
+.hebergements h3{
+    font-weight: normal;
+    font-size: 10px;
 }
 
 /****** Populaires ***********/
@@ -306,6 +323,10 @@ nav ul li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.populaires-title h2 {
+    font-size: 16px;
 }
 
 .populaires-cards .card {
@@ -348,7 +369,20 @@ nav ul li:hover {
     cursor: pointer;
 }
 
+.card-txt h3 {
+    font-size: 12px;
+}
+
+.card-txt .card-subtitle {
+    font-size: 10px;
+}
+
 /****** Activités ***********/
+
+.titleAct h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
 
 .activites {
     display: flex;
@@ -394,6 +428,12 @@ nav ul li:hover {
     padding-bottom: 6px;
 }
 
+.acth2 {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 15px;
+}
+
 /****** Footer ***********/
 
 .footer-container {
@@ -411,6 +451,7 @@ nav ul li:hover {
 
 .footer-category h2 {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -694,8 +735,8 @@ nav ul li:hover {
         padding: 0;
     }
 
-    .filters button i {
-        margin: 5px;
+    .filter-button span {
+        margin: 10px;
     }
 
     .info-container {
@@ -741,6 +782,18 @@ nav ul li:hover {
         height: 172px;
     }
 
+    .populaires-cards .card-content {
+        width: auto;
+    }
+
+    .card-txt h3 {
+        font-size: 14px;
+    }
+
+    .card-txt .card-subtitle {
+        font-size: 12px;
+    }
+
     .hebergements-and-populaires .populaires{
         border-radius: 0;
     }
@@ -755,6 +808,7 @@ nav ul li:hover {
 
     .hebergementscard h2, .hebergements h3 {
         font-size: 16px;
+        margin-left: 5px;
     }
 
     .hebergements {
@@ -784,6 +838,10 @@ nav ul li:hover {
 
     .affplus {
         font-size: 20px;
+    }
+
+    .affplus {
+        padding-left: 15px;
     }
 
     .titleAct{
