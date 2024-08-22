@@ -471,6 +471,10 @@ nav ul li:hover {
         margin: 0% 3% 0% 3%;
     }
 
+    body {
+        padding: 0;
+    }
+
     nav ul li{
         width: 50%;
         text-align: center;
