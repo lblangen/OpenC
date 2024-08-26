@@ -592,8 +592,7 @@ nav ul li:hover {
 
     .activites .vignette h2 {
         text-align: left;
-        font-size: 10px;
-        margin-left: 20%;
+        font-size: 12px;
         margin-top: 8%;
         margin-bottom: 8%;
     }
@@ -686,6 +685,10 @@ nav ul li:hover {
 
     .searchButton {
         display: none;
+    }
+
+    .searchInput {
+        height: 55px;
     }
 
     .bouton_rechercher_mobile i {
@@ -849,7 +852,7 @@ nav ul li:hover {
     }
 
     .affplus {
-        padding-left: 15px;
+        padding-left: 22px;
     }
 
     .titleAct{
